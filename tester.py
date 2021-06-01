@@ -10,8 +10,8 @@ from PIL import Image
 #
 # st.write(c)
 
-file_path = "C:/Users/Yash/Desktop/Data Science @ Denver/Final Projects/COMP 4448/final_models"
-char_images_path = "C:/Users/Yash/Desktop/Data Science @ Denver/Final Projects/COMP 4448/tony_images/"
+file_path = "final_models/"
+char_images_path = "tony_images/"
 
 
 model = load(file_path + '/main_model.joblib')
