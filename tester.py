@@ -32,7 +32,7 @@ def render_interactive_prediction():
     prediction_conf = model.predict_proba([input_string]).max()
     col1, col2, col3 = st.beta_columns(3)
 
-    st.markdown('<style>.prediction{color: red; font-size: 24px; font-weight: bold}</style>', unsafe_allow_html=True)
+    st.markdown('<style>.prediction{color: #DC143C; font-size: 24px; font-weight: bold}</style>', unsafe_allow_html=True)
 
     with col1:
         st.subheader("Prediction:")
@@ -60,7 +60,7 @@ def render_about_the_model():
 
     st.subheader("Dataset Details")
     st.markdown('<p class="text">The dataset used was created for this project by parsing the Marvel released script /\n'
-                'online transcript for 18 movies.</p>', unsafe_allow_html=True)
+                'online transcript for 18 MCU movies.</p>', unsafe_allow_html=True)
     st.markdown("<p class='text'>The dataset is available on <a href='https://www.kaggle.com/pdunton/marvel-cinematic-universe-dialogue' target=_blank'>Kaggle</a>.", unsafe_allow_html=True)
 
     st.subheader("Why only predict Tony Stark?")
