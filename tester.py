@@ -19,7 +19,7 @@ model = load(file_path + '/main_model.joblib')
 def render_interactive_prediction():
 
     st.header("Interactive Prediction")
-    st.text("Type in a line to see if Tony Stark is predicted to say it!")
+    st.text("Type in a dialog to see the chances of Tony Stark saying it!")
 
     input_string = st.text_input('Input Line', 'I am Iron Man.')
 
