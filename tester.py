@@ -56,7 +56,6 @@ def render_about_the_model():
                 'better performance keeping all words rather than removing <a href="https://www.geeksforgeeks.org/removing-stop-words-nltk-python/" target="_blank">NLTK\'s list of stop words</a>.\n'
                 'Word counts also transformed with\n'
                 'term frequencies and inverse document frequencies using scikit-learn\'s implementation.</p>', unsafe_allow_html=True)
-    st.markdown('<p class="text">To see the code for the model, see <a href="https://github.com/yashwantreddy/TonySaySo/blob/main/DidTonySaySo.ipynb" target="_blank">this </a> Jupyter Notebook.</p>', unsafe_allow_html=True)
 
     st.subheader("Dataset Details")
     st.markdown('<p class="text">The dataset used was created for this project by parsing the Marvel released script /\n'
