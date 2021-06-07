@@ -67,10 +67,10 @@ def render_about_the_model():
     st.markdown("<p class='text'>The dataset is available on <a href='https://www.kaggle.com/pdunton/marvel-cinematic-universe-dialogue' target=_blank'>Kaggle</a>.", unsafe_allow_html=True)
 
     st.subheader("Why only predict Tony Stark?")
-    st.markdown("<p class='text'>While the dataset contains the dialogue for all 652 character, most of which are just\n"
-            "movie extras, trying to predict a large number of characters results in such poor\n"
-            "performance that the model isn't useful or fun in any way.  Tony Stark being the most \n"
-            "popular and most loved Avenger amongst the other characters, I believed that it would be a fun \n"
+    st.markdown("<p class='text'>While the dataset contains the dialogue for all 652 characters, most of which are just\n"
+            "movie extras. Trying to predict a large number of characters results in such poor\n"
+            "performance that the model isn't useful or fun in any way.  Tony Stark - being the most \n"
+            "popular and most loved Avenger amongst the other characters - lead me to believe that it would be a fun \n"
             "project to predict if a dialog has Tony's flair in it .</p>", unsafe_allow_html=True)
 
     st.subheader("Other Models")
