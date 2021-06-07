@@ -16,12 +16,17 @@ char_images_path = "tony_images/"
 
 model = load(file_path + '/main_model.joblib')
 
+def top():
+    st.header("Would Tony Say So?")
+    st.text("by Yashwant Jankay")
+    
+
 def render_interactive_prediction():
 
     st.header("Interactive Prediction")
     st.text("Type in a dialog to see the chances of Tony Stark saying it!")
 
-    input_string = st.text_input('Input Line', 'I am Iron Man.')
+    input_string = st.text_input('Input Line', 'I love you 3000.')
 
     prediction = model.predict([input_string])
     result = "Not Tony Stark"
