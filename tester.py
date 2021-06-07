@@ -16,9 +16,9 @@ char_images_path = "tony_images/"
 
 model = load(file_path + '/main_model.joblib')
 
-def top():
-    st.header("Would Tony Say So?")
-    st.text("by Yashwant Jankay")
+def title_text():
+    st.markdown("<h1 style='text-align: center; color: #2471A3;font-size: 3em'>Would Tony Say So?</h1>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center; color: #2E4053;'>by Yashwant Jankay</h3>", unsafe_allow_html=True)
     
 
 def render_interactive_prediction():
@@ -90,6 +90,6 @@ def render_about_the_model():
                 "Thank you for taking the time to check this out.", unsafe_allow_html=True)
 
 
-top()
+title_text()
 render_interactive_prediction()
 render_about_the_model()
