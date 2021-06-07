@@ -54,7 +54,7 @@ def render_about_the_model():
 
     st.subheader("Implementation Details")
     st.markdown('<p class="text">This project uses <a href="https://scikit-learn.org/stable/" target="_blank">scikit-learn</a> to implement a <a href="https://en.wikipedia.org/wiki/Naive_Bayes_classifier" target="_blank">Naive Bayes Classifier</a>.  Hyperparameter\n'
-                'selection is done using cross validation (10 folds). With hyperparameter selection, this results in nested cross\n'
+                'selection is done using cross validation (10 folds). Along with hyperparameter selection, this process results in nested cross\n'
                 'validation.  Stop words, which are words that provide no value to predictions (I, you,\n'
                 'the, a, an, ...), are not removed from predictions.  Hyperparameter selection showed\n'
                 'better performance keeping all words rather than removing <a href="https://www.geeksforgeeks.org/removing-stop-words-nltk-python/" target="_blank">NLTK\'s list of stop words</a>.\n'
