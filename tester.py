@@ -89,5 +89,7 @@ def render_about_the_model():
                 "distinguishes Tony Stark from everyone else. \n"
                 "Thank you for taking the time to check this out.", unsafe_allow_html=True)
 
+
+top()
 render_interactive_prediction()
 render_about_the_model()
